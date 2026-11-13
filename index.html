@@ -3,17 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>Anu mark</title>
+  <style>
+  body {
+     max-width: 600px;
+     margin: 0 auto;
+     font-family: "Prompt", Tahoma, sans-serif;
+     background-color: #FFF0F5;
+    }
+  header img { border-radius: 20%}
+  .btn {
+  background-color: #2fb57a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  }
+  .btn:hover { background-color: #1f8a5a; }
+    h1 { color: #A94064; }
+    h2 { color: #C54B8C; }
+      section {
+    background-color: white;
+    padding: 1px 24px;
+    margin-bottom: 16px;
+    border-radius: 25px;
+    }
+    body.dark {
+  background-color: #572649;
+  color: #f0f0f0;
+}
+  </style>
 </head>
 <body>
+  <header>
+  <img src="https://www.google.com/imgres?q=otter&imgurl=https%3A%2F%2Ft4.ftcdn.net%2Fjpg%2F17%2F32%2F17%2F37%2F360_F_1732173775_jxeAzpykB44L0Xz1SRyJW8B9VWDYzjOu.jpg&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dbaby%2Botter&docid=KeeLu44c54PKwM&tbnid=He2OxQXvoZs2XM&vet=12ahUKEwjQ_O2isoSYAxW1jeEIHbxGHRk4ChCc8A56BAgoEAA..i&w=514&h=360&hcb=2&ved=2ahUKEwjQ_O2isoSYAxW1jeEIHbxGHRk4ChCc8A56BAgoEAA"alt="อนุอยากเลี้ยงนาก" width=300>
   <h1>
     Anu Sonut
   </h1>
   <p>
-    Hello everyone! I'm Anu Sonut. you can also call me Mark.
+    สวัสดีครับ ผมชื่ออนุ โสนุช ชื่อเล่นชื่อมาร์คครับ
   </p>
-  <h2>
-    การศึกษา
-  </h2>
+  <button class="btn" onclick="toggleDark()">
+  สลับโหมดมืด/สว่าง
+  </header>
+  <section>
+   <h2>
+    การศึกษา 
+   </h2>  
+  </section>
+  <ul>
+    <li>มัธยมต้น Haward University</li>
+    <li>มัธยมปลาย Cambridge University</li>
   </ul>
+  <section>
+  <h2>
+    ทักษะ
+  </h2>
+  </section>
+  <ul>
+    <li>กินข้าวได้หลายจานในมือเดียว</li>
+    <li>สวาปามโต๊ะจีนโดยไม่เหลือแม้แต่ช้อนส้อม</li>
+    <li>เปิดร่างสุกรโลกันตร์เพื่อตรวจหาตำแหน่งร้านอาหารชั้นเลิศได้</li>
+  </ul>
+  <script>
+  function toggleDark() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+  <footer><a class="btn" href="anu.son_g36@mwit.ac.th">คลิกเพื่อติดต่อ</a>
+  </footer>
 </body>
 </html>
